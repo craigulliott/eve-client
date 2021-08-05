@@ -1,0 +1,232 @@
+body {
+  background-color: #282c34;
+}
+
+.main {
+  .product {
+    display: flex;
+    border-bottom: 1px solid white;
+
+    > div {
+      flex-grow: 1;
+      color: white;
+      padding: 20px 0;
+      text-align:center;
+    }
+
+    > .eth {
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+
+      .up {
+        color: #28c128;
+      }
+
+      .down {
+        color: #c12828;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+
+    > div {
+      flex-grow: 1;
+
+      > p {
+        text-align: center;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    button {
+      font-size: 24px;
+      min-width: 260px;
+      border: 1px solid black;
+      line-height: 50px;
+      cursor: pointer;
+    }
+
+    .buy {
+      button {
+        background-color: #28c128;
+      }
+    }
+
+    .sell {
+      button {
+        background-color: #c12828;
+      }
+    }
+  }
+
+  .activity {
+    display: flex;
+
+    .orders {
+      flex-grow: 1;
+      color: white;
+
+      h2 {
+        text-align: center;
+      }
+
+      .strategy {
+        border: 1px solid rgb(180, 180, 0);
+        margin: 8px 10px;
+        padding: 0;
+
+        h3 {
+          margin: 0;
+          font-size: 12px;
+          background-color: rgb(180, 180, 0);
+          padding: 4px 8px;
+
+          span {
+            float: right;
+          }
+        }
+
+        p {
+          margin: 4px 6px;
+        }
+      }
+
+      .order {
+        margin: 8px 10px;
+        padding: 0;
+
+        &.buy {
+          border: 1px solid rgb(9, 132, 0);
+
+          h3 {
+            padding: 4px 8px;
+            background-color: rgb(9, 132, 0);
+          }
+
+        }
+
+        &.sell {
+          border: 1px solid rgb(132, 0, 0);
+
+          h3 {
+            padding: 4px 8px;
+            background-color: rgb(132, 0, 0);
+          }
+        }
+
+        &.canceled {
+          opacity: 0.5
+        }
+
+        h3 {
+          margin: 0;
+          font-size: 12px;
+
+          span {
+            float: right;
+          }
+        }
+
+        .container {
+          display: flex;
+          justify-content: space-between;
+
+          .fills {
+            color:#ddd;
+            font-size: 12px;
+            margin-top: 16px;
+          }
+
+          .controls {
+            button {
+              height: 100%;
+              font-size: 24px;
+              width: 80%;
+              min-width: 220px;
+            }
+          }
+
+          .info {
+            p {
+              margin: 4px 6px;
+            }
+
+            p.id {
+              color: #999;
+              font-size: 12px;
+            }
+
+            p.error {
+              color: rgb(241, 229, 10);
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+
+    .lots {
+      flex-grow: 1;
+      color: white;
+
+      .lot {
+        border: 1px solid rgb(180, 180, 0);
+        margin: 8px 10px;
+        padding: 0;
+        display: flex;
+
+        p {
+          margin: 4px 6px;
+        }
+
+        .info {
+          flex-grow: 1;
+          min-width: 250px;
+        }
+
+        .profit {
+          flex-grow: 1;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .cumulative {
+          flex-grow: 1;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .up {
+          background-color: rgb(9, 132, 0);
+        }
+
+        .down {
+          background-color: rgb(132, 0, 0);
+        }
+      }
+    }
+
+  }
+}
+
